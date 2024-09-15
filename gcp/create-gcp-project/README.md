@@ -1,6 +1,6 @@
 # edit by Max 2024/9/15
 
-# 目前使用 ADCs (Application Default Credentials), 故不需要 Service Account JSON 檔案, 可以參考 https://sakananote2.blogspot.com/2024/01/gcp-authentication-with-terraform-adcs.html
+目前使用 ADCs (Application Default Credentials), 故不需要 Service Account JSON 檔案, 可以參考 https://sakananote2.blogspot.com/2024/01/gcp-authentication-with-terraform-adcs.html
 
 建立方式
 
