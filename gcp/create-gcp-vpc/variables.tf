@@ -1,10 +1,10 @@
-# 定義變數 "gcp_project_id"，預設值為 "sakana-20240915-2"。
+# 定義變數 "gcp_project_id"，預設值為 "sakana-20240926"。
 # 這個變數通常用來指定 Google Cloud 專案的 ID。
 variable "gcp_project_id" {
   default = "sakana-20240926"
 }
 
-# 定義變數 "gcp_project_name"，預設值為 "sakana-20240915-2"。
+# 定義變數 "gcp_project_name"，預設值為 "sakana-20240926"。
 # 這個變數通常用來指定 Google Cloud 專案的顯示名稱。
 variable "gcp_project_name" {
   default = "sakana-20240926"
@@ -14,6 +14,12 @@ variable "gcp_project_name" {
 # 這個變數通常用來指定子網路的 IP 地址範圍。
 variable "ip_cidr_range" {
   default = "10.12.115.0/24"
+}
+
+# 定義變數 "vpc_name"，預設值為 "sakana-20240926-10-12-115"。
+# 這個變數通常用來指定 VPC 網絡的名稱。
+variable "vpc_name" {
+  default = "sakana-20240926-10-12-115"
 }
 
 # 定義變數 "subnet_name"，預設值為 "sakana-20240926-10-12-115"。
