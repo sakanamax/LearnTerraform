@@ -1,37 +1,44 @@
-# Local .terraform directories
+# 本地 .terraform 目录
 **/.terraform/*
 
-# .tfstate files
+# .tfstate 文件
 *.tfstate
 *.tfstate.backup
 
-# Crash log files
+# 崩溃日志文件
 crash.log
 crash.*.log
 
-# Exclude all .tfvars files, which are likely to contain sensitive data, such as
-# password, private keys, and other secrets. These should not be part of version 
-# control as they are data points which are potentially sensitive and subject 
-# to change depending on the environment.
+# 排除所有 .tfvars 文件，这些文件可能包含敏感数据，例如密码、私钥和其他机密信息。
+# 这些文件不应包含在版本控制中，因为它们是潜在敏感且可能根据环境而变化的数据点。
 *.tfvars
 *.tfvars.json
 
-# Ignore override files as they are usually used to override resources locally and so
-# are not checked in
+# 忽略覆盖文件，因为它们通常用于在本地覆盖资源，因此不进行检入
 override.tf
 override.tf.json
 *_override.tf
 *_override.tf.json
 
-# Include override files you do wish to add to version control using negated pattern
+# 使用否定模式包含您希望添加到版本控制的覆盖文件
 # !example_override.tf
 
-# Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
-# example: *tfplan*
+# 包含要忽略的 tfplan 文件，这些文件是命令 terraform plan -out=tfplan 的计划输出
+# 例如：*tfplan*
 
-# Ignore CLI configuration files
+# 忽略 CLI 配置文件
 .terraformrc
 terraform.rc
 
-# For Mac
+# Mac 系统
 .DS_Store
+
+# 忽略模块缓存目录
+**/.terraform/modules/*
+
+# 忽略 terraform 插件缓存目录
+~/.terraform.d/plugins/*
+
+# 忽略 terraform 运行时目录
+~/.terraform.d/
+
